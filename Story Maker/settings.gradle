@@ -1,0 +1,5 @@
+include ':ads'
+include ':matisse'
+include ':tedimagepicker'
+include ':app'
+rootProject.name = "Story Maker"

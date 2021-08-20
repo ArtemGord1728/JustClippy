@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayoutOverlays"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/un_selected_white" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpagerOverlays"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--  <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="3">
+
+              <LinearLayout
+                  android:id="@+id/ic_phrases"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:clickable="true"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_8sdp">
+
+
+                  <com.lubuteam.storymaker.view.SquareImageView
+                      android:layout_width="@dimen/_70sdp"
+                      android:layout_height="@dimen/_70sdp"
+                      android:layout_gravity="center"
+                      android:background="@drawable/ic_bg_overlays"
+                      android:padding="@dimen/_25sdp"
+                      android:src="@drawable/ic_phrase"
+                      android:tint="#333333" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Phrases"
+                      android:textAlignment="center"
+                      android:textColor="@android:color/black"
+                      android:textSize="@dimen/_12sdp" />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/ic_food"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:clickable="true"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_8sdp">
+
+
+                  <com.lubuteam.storymaker.view.SquareImageView
+                      android:layout_width="@dimen/_70sdp"
+                      android:layout_height="@dimen/_70sdp"
+                      android:layout_gravity="center"
+                      android:background="@drawable/ic_bg_overlays"
+                      android:padding="@dimen/_25sdp"
+                      android:src="@drawable/ic_food"
+                      android:tint="#333333" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Food"
+                      android:textAlignment="center"
+                      android:textColor="@android:color/black"
+                      android:textSize="@dimen/_12sdp" />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/ic_love"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:clickable="true"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_8sdp">
+
+
+                  <com.lubuteam.storymaker.view.SquareImageView
+                      android:layout_width="@dimen/_70sdp"
+                      android:layout_height="@dimen/_70sdp"
+                      android:layout_gravity="center"
+                      android:padding="@dimen/_25sdp"
+                      android:background="@drawable/ic_bg_overlays"
+                      android:src="@drawable/ic_love"
+                      android:tint="#333333" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Love"
+                      android:textAlignment="center"
+                      android:textColor="@android:color/black"
+                      android:textSize="@dimen/_12sdp" />
+              </LinearLayout>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="3">
+
+              <LinearLayout
+                  android:id="@+id/ic_christmas"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:clickable="true"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_8sdp">
+
+                  <com.lubuteam.storymaker.view.SquareImageView
+                      android:layout_width="@dimen/_70sdp"
+                      android:layout_height="@dimen/_70sdp"
+                      android:layout_gravity="center"
+                      android:padding="@dimen/_25sdp"
+                      android:background="@drawable/ic_bg_overlays"
+                      android:src="@drawable/ic_christmas"
+                      android:tint="#333333" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Christmas"
+                      android:textAlignment="center"
+                      android:textColor="@android:color/black"
+                      android:textSize="@dimen/_12sdp" />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/ic_sayings"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:clickable="true"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_8sdp">
+
+
+                  <com.lubuteam.storymaker.view.SquareImageView
+                      android:layout_width="@dimen/_70sdp"
+                      android:layout_height="@dimen/_70sdp"
+                      android:layout_gravity="center"
+                      android:padding="@dimen/_25sdp"
+                      android:background="@drawable/ic_bg_overlays"
+                      android:src="@drawable/ic_sayings"
+                      android:tint="#333333" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Sayings"
+                      android:textAlignment="center"
+                      android:textColor="@android:color/black"
+                      android:textSize="@dimen/_12sdp" />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/ic_summer"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:clickable="true"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_8sdp">
+
+
+                  <com.lubuteam.storymaker.view.SquareImageView
+                      android:layout_width="@dimen/_70sdp"
+                      android:layout_height="@dimen/_70sdp"
+                      android:layout_gravity="center"
+                      android:background="@drawable/ic_bg_overlays"
+                      android:padding="@dimen/_25sdp"
+                      android:src="@drawable/ic_summer"
+                      android:tint="#333333" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Summer"
+                      android:textAlignment="center"
+                      android:textColor="@android:color/black"
+                      android:textSize="@dimen/_12sdp" />
+              </LinearLayout>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="horizontal"
+              android:weightSum="3">
+
+              <LinearLayout
+                  android:id="@+id/ic_winter"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:clickable="true"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_8sdp">
+
+                  <com.lubuteam.storymaker.view.SquareImageView
+                      android:layout_width="@dimen/_70sdp"
+                      android:layout_height="@dimen/_70sdp"
+                      android:layout_gravity="center"
+                      android:padding="@dimen/_25sdp"
+                      android:background="@drawable/ic_bg_overlays"
+                      android:src="@drawable/ic_winter"
+                      android:tint="#333333" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Winter"
+                      android:textAlignment="center"
+                      android:textColor="@android:color/black"
+                      android:textSize="@dimen/_12sdp" />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/ic_travel"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:clickable="true"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_8sdp">
+
+
+                  <com.lubuteam.storymaker.view.SquareImageView
+                      android:layout_width="@dimen/_70sdp"
+                      android:layout_height="@dimen/_70sdp"
+                      android:layout_gravity="center"
+                      android:background="@drawable/ic_bg_overlays"
+                      android:padding="@dimen/_25sdp"
+                      android:src="@drawable/ic_travel"
+                      android:tint="#333333" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Travel"
+                      android:textAlignment="center"
+                      android:textColor="@android:color/black"
+                      android:textSize="@dimen/_12sdp" />
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/ic_motivation"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_weight="1"
+                  android:clickable="true"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="@dimen/_8sdp">
+
+
+                  <com.lubuteam.storymaker.view.SquareImageView
+                      android:layout_width="@dimen/_70sdp"
+                      android:layout_height="@dimen/_70sdp"
+                      android:layout_gravity="center"
+                      android:padding="@dimen/_25sdp"
+                      android:background="@drawable/ic_bg_overlays"
+                      android:src="@drawable/ic_motivation"
+                      android:tint="#333333" />
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Motivation"
+                      android:textAlignment="center"
+                      android:textColor="@android:color/black"
+                      android:textSize="@dimen/_12sdp" />
+              </LinearLayout>
+          </LinearLayout>
+      </LinearLayout>-->
+</LinearLayout>

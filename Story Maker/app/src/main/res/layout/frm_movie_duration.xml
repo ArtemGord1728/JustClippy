@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextBelowImage"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="@string/duration_title"
+        android:textColor="@color/white"
+        android:textSize="18.0sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp">
+
+
+        <ImageView
+            android:id="@+id/ll_1s"
+            android:layout_width="@dimen/_6sdp"
+            android:layout_height="@dimen/_6sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:src="@drawable/ic_1s" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toStartOf="@+id/tmv_5s"
+            android:layout_toEndOf="@id/ll_1s">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_8sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_seek" />
+
+            <com.smart.videored.widget.IndicatorSeekBar
+                android:id="@+id/sb_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isb_indicator_color="@color/blue"
+                app:isb_max="5"
+                app:isb_min="1"
+                app:isb_progress="2"
+                app:isb_seek_smoothly="true"
+                app:isb_show_indicator="rounded_rectangle"
+                app:isb_show_tick_marks_type="oval"
+                app:isb_show_tick_texts="true"
+                app:isb_thumb_color="@color/blue"
+                app:isb_thumb_drawable="@drawable/thumb_image"
+                app:isb_thumb_size="20dp"
+                app:isb_track_background_color="@android:color/transparent"
+                app:isb_track_background_size="2dp"
+                app:isb_track_progress_color="@android:color/transparent"
+                app:isb_track_progress_size="4dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/tmv_5s"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:src="@drawable/ic_2s" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="1s" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="5s" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@id/rdgDuration"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:orientation="horizontal"
+        android:paddingLeft="8.0dip"
+        android:paddingRight="8.0dip"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@id/rd10"
+            style="@style/TextBelowImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:buttonTint="@color/selected_border"
+            android:checked="true"
+            android:text="1s"
+            android:textColor="@color/white"
+            android:textSize="14.0dip" />
+
+        <RadioButton
+            android:id="@id/rd15"
+            style="@style/TextBelowImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:buttonTint="@color/selected_border"
+            android:text="2s"
+            android:textColor="@color/white"
+            android:textSize="14.0dip" />
+
+        <RadioButton
+            android:id="@id/rd20"
+            style="@style/TextBelowImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:buttonTint="@color/selected_border"
+            android:text="3s"
+            android:textColor="@color/white"
+            android:textSize="14.0dip" />
+
+        <RadioButton
+            android:id="@id/rd25"
+            style="@style/TextBelowImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:buttonTint="@color/selected_border"
+            android:text="5s"
+            android:textColor="@color/white"
+            android:textSize="14.0dip" />
+
+        <RadioButton
+            android:id="@id/rd30"
+            style="@style/TextBelowImage"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:buttonTint="@color/selected_border"
+            android:text="10s"
+            android:textColor="@color/white"
+            android:textSize="14.0dip" />
+    </RadioGroup>
+</RelativeLayout>

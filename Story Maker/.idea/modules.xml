@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Story_Maker.iml" filepath="$PROJECT_DIR$/.idea/modules/Story_Maker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ads/Story_Maker.ads.iml" filepath="$PROJECT_DIR$/.idea/modules/ads/Story_Maker.ads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Story_Maker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Story_Maker.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/matisse/Story_Maker.matisse.iml" filepath="$PROJECT_DIR$/.idea/modules/matisse/Story_Maker.matisse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tedimagepicker/Story_Maker.tedimagepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/tedimagepicker/Story_Maker.tedimagepicker.iml" />
+    </modules>
+  </component>
+</project>

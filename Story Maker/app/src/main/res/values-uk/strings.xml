@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="album_name_all">Всі</string>
+
+    <string name="button_preview">Перегляд</string>
+    <string name="button_apply_default">Застосувати</string>
+    <string name="button_apply">Застосувати(%1$d)</string>
+    <string name="button_back">Назад</string>
+    <string name="photo_grid_capture">Камера</string>
+    <string name="empty_text">Пусто</string>
+    <string name="button_ok">OK</string>
+
+    <string name="error_file_type">Непідтримуваний тип файла</string>
+    <string name="error_type_conflict">Неможливо обрати зображення і відео одночасно</string>
+    <string name="error_no_video_activity">Застосунок для перегляду відео не знайдений</string>
+    <string name="share_app_str">Поділіться матеріалами</string>
+
+</resources>

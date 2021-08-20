@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/btnMyMusic"
+        android:layout_width="78.0dip"
+        android:layout_height="78.0dip"
+        android:layout_margin="6.0dip"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="#f2f2f2"
+        app:cardCornerRadius="4.0dip"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tint="#8A000000"
+                android:src="@drawable/ic_library" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center_horizontal"
+                android:text="@string/my_music"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:theme="@style/TextBelowImage" />
+        </LinearLayout>
+
+        <com.smart.videored.view.SquareImageView
+            android:id="@id/imgUnChecked"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/recyclerMusic"
+        android:layout_centerVertical="true"
+        android:layout_width="fill_parent"
+        android:layout_toEndOf="@+id/btnMyMusic"
+        android:layout_height="90dip"
+        android:paddingLeft="3.0dip"
+        android:paddingRight="3.0dip" />
+</RelativeLayout>

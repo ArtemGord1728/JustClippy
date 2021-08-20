@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:src="@drawable/logo"
+        app:riv_corner_radius="@dimen/_10sdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textAllCaps="true"
+        android:id="@+id/tv"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="#e84393"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@id/tv_studio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textAllCaps="true"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:id="@+id/tv_studio"
+        android:textSize="@dimen/_8sdp"
+        android:fontFamily="@font/sf_pro_display_medium"
+        android:textColor="#2051FF"
+        android:text="@string/splash_2"
+        app:layout_constraintBottom_toTopOf="@id/img_congratulations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/img_congratulations"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_1sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loading.json"
+        app:lottie_loop="true" />
+
+</LinearLayout>

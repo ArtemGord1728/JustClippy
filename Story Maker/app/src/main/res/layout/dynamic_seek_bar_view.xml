@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dms="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text=""
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/arrow"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginBottom="-4dp"
+            android:background="@drawable/triangle_shape"
+            android:rotation="180"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.smart.videored.view.CustomSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:thumbTint="@color/blue"
+            android:progressTint="@color/blue"
+            android:max="100"
+            android:progressBackgroundTint="@color/blue"
+            android:progress="50"
+            android:progressDrawable="@android:color/transparent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
